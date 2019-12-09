@@ -1,5 +1,13 @@
 Twitter Analysis App:
 
+Libraries required:
+    python
+    tweepy
+    matplotlib
+    wordcloud
+    flask
+    nltk
+
 How to run:
 
     Please replace  your consumner key and token in file twitter_app.py

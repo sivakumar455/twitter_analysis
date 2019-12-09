@@ -1,5 +1,7 @@
+#!/Users/sivakumarpadala/anaconda3/envs/tensorflow_env/bin/python
+import twitter_app as twt_api
+import nlp as nlp
 
-import byjus.twitter_app as twt_api
 from flask import render_template, request, jsonify
 from flask import Flask
 
@@ -22,6 +24,8 @@ def go():
 
     api = twt_api.create_api()
     tweet_list, tweet_text = twt_api.search_tweet(api, query)
+    
+    # Use NLP to process tweet text
 
     # This will render the go.html Please see that file.
     return render_template(
